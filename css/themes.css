@@ -1,0 +1,122 @@
+/* LIGHT THEME */
+
+html[data-bs-theme="light"] * {
+    --body-background: url(/images/background.jpg);
+
+    /* TEXT COLORS */
+
+    --text-color: #404040;
+    --text-hover: #019232;
+    --text-secondary: rgba(255, 255, 255, 0.87);
+
+
+    /* THEME COLOR */
+
+    --theme-color: #5e5f5e;
+
+    /* SHADOW */
+
+    --shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+    /* BACKGROUND */
+
+    --background: rgba(238, 238, 238, 0.8);
+
+    /* NAVBAR */
+
+    --nav-btn-color: #e0e0e0;
+    --nav-btn-hover: 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+    --nav-link-color: #191919;
+    --nav-link-active-background: #019232;
+
+    --header-border-radius: 0 0 15px 15px;
+
+
+
+    --border-top: 1px solid rgba(35, 35, 35, 0.2);
+
+    /* FOOTER */
+
+    --footer-border-radius: 15px 15px 0 0;
+    --footer-color: rgba(255, 255, 255, 0.87);
+
+    /* DROPDONW */
+
+    --bs-dropdown-bg: rgba(238, 238, 238, 1);
+    --bs-border-color-translucent: 0;
+    --bs-border-width: 0;
+
+    --divdiver-color: rgba(64, 64, 64, 0.2);
+
+    /* CALENDAR */
+
+    --calendar-hover: rgba(1, 146, 49, 0.2);
+    --calendar-shadow: -0.5px 0.5px 0px 0px rgba(0, 0, 0, 0.15);
+    --calendar-active: #3b933f;
+    --calendar-day-number-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+    /* PAGE TITLE */
+
+    --title-color: rgba(255, 255, 255, 0.87);
+
+    /* 
+
+        PAGES
+
+    */
+
+    /* /pages/index.css */
+
+    --index-text-color: rgba(255, 255, 255, 0.87);
+}
+
+/* DARK THEME */
+
+html[data-bs-theme="dark"] * {
+    --body-background: url(/images/background.jpg);
+    --text-color: rgba(255, 255, 255, 0.87);
+    --text-hover: #019232;
+    --text-secondary: #404040;
+
+    --theme-color: #019232 !important;
+
+    --shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+    --background: rgba(35, 35, 35, 0.9);
+
+    --nav-btn-color: #2E2E2E;
+    --nav-btn-hover: 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+    --border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    --nav-link-color: #e0e0e0;
+
+    --header-border-radius: 0 0 15px 15px;
+
+    --footer-border-radius: 15px 15px 0 0;
+    --footer-color: rgba(255, 255, 255, 0.87);
+
+
+    --nav-link-active-background: #019232;
+
+    --bs-dropdown-bg: #2E2E2E;
+    --bs-border-color-translucent: 0;
+
+    --bs-border-width: 0;
+
+    --dropdown-item-border: 1px solid rgba(255, 255, 255, 0.15);
+
+    --divdiver-color: rgba(238, 238, 238, 0.2);
+
+    --calendar-hover: rgba(255, 255, 255, 0.1);
+    --calendar-shadow: -0.5px 0.5px 0px 0px rgba(0, 0, 0, 0.5);
+    --calendar-active: #3b933f;
+    --calendar-day-number-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+
+    --title-color: rgba(255, 255, 255, 0.87);
+
+    /* index.css */
+
+    --index-text-color: rgba(255, 255, 255, 0.87);
+}

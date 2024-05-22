@@ -1,0 +1,21 @@
+#content.home-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--index-text-color);
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#content.home-page .home-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#content.home-page .home-logo span {
+    font-size: 36px;
+    font-weight: 800;
+}
+#content.home-page .home-text {
+    font-size: 18px;
+}
