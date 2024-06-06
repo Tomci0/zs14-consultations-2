@@ -1,21 +1,70 @@
-#content.home-page {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    color: var(--index-text-color);
-    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-#content.home-page .home-logo {
+/* 
+
+    Project Name: ZS 14 - Konsultacje
+    Author: Tomasz Magiera (https://tomcio.space)
+    Start Date: 6.06.2024r.
+
+
+    Contributors:
+        - Tomasz Magiera (https://github.com/tomci0)
+
+
+
+    Description:
+
+        - Jeśli edytujesz ten plik, dodaj swój wpis powyżej.
+        - Projekt ma na celu stworzenie systemu do zarządzania konsultacjami w szkole.
+        - Jest to projekt open-source, więc każdy może pomóc w jego rozwoju.
+
+        - Proszę opisywać zmiany, które wprowadzasz w projekcie.
+        - Proszę opisywać nowe rzezy, które dodajesz do projektu.
+
+*/
+
+
+/* TODAY CONSULTATIONS CARD */
+
+#today-consultations {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#today-consultations .item {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+
+    background-color: var(--card-item-bg);
+    padding: 0.5rem;
 }
-#content.home-page .home-logo span {
-    font-size: 36px;
-    font-weight: 800;
+
+#today-consultations .item .data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-#content.home-page .home-text {
-    font-size: 18px;
+
+#today-consultations .item .image .icon {
+    font-size: 2.1rem;
+}
+
+#today-consultations .item .data .title {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#today-consultations .item .data .date {
+    font-weight: 300;
+    font-size: 1.0rem;
+}
+
+#today-consultations .item .values .icon {
+    font-size: 1.2rem;
+}
+
+#today-consultations .item .values .value {
+    font-size: 0.8rem;
+    font-weight: 300;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-bs-theme="light">
+<html lang="pl" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,426 +9,38 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+
+    <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/themes.css">
-    <link rel="stylesheet" href="/css/responsive.css">
 
-    <link rel="stylesheet" href="/css/pages/calendar.css">
-
-    <link rel="stylesheet" href="/css/calendar.css">
-    <script src="/js/theme.js"></script>
 </head>
 <body>
 
-    <!-- 
-        
-        HEADER 
-    
-    -->
+    <!-- SIDEBAR -->
 
-    <div id="header">
-        <div class="container">
-            <div id="navbar">
-
-                <!-- LOGO -->
-
-                <div id="logo" class="order-lg-1 order-2">
-                    <a href="https://zs14.pl" target="_blank" class="d-inline-flex link-body-emphasis text-decoration-none">
-                        <img src="/images/zs14-logo.png" class="rounded-circle">
-                    </a>
-                </div>
-
-                <!-- NAVIGATION -->
-
-                <div id="navigation" class="d-none d-lg-flex order-1 flex-grow-1 justify-content-center">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a href="/" class="btn nav-link" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom" data-bs-offset="0,22" data-bs-title="Strona Główna">
-                                <span class="iconify" data-icon="mdi:home"></span>
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a href="/calendar" class="btn nav-link active" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom" data-bs-offset="0,22" data-bs-title="Kalendarz Konsultacji">
-                                <span class="iconify" data-icon="mdi:calendar"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="navigation-mobile" class="dropdown">
-                    <a href="#" class="d-lg-none d-block link-body-emphasis text-decoration-none"
-                        id="dropdownMenuButton1" data-bs-toggle="collapse" data-bs-target="#navbar-mobile-dropdown" aria-expanded="false">
-                        <span class="iconify" data-icon="mdi:menu"></span>
-                    </a>
-                </div>
-
-                <!-- USER DROPDOWN OR LOGIN -->
-
-                <div id="user" class="order-lg-3 order-3">
-                    <button id="theme-toggle" type="button" class="btn btn-sm me-3">
-                        <span class="iconify" data-icon="mdi:weather-night" id="theme-icon"></span>
-                    </button>
-                    <div class="dropdown">
-                        <a id="user-data" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-35, 35">
-                            <span id="image">
-                                <img src="https://via.placeholder.com/64" class="img rounded-circle">
-                            </span>
-                            <span id="name" class="d-none d-lg-inline">Tomasz Magiera</span>
-                        </a>
-                      
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">
-                                <span class="icon iconify" data-icon="mdi:shield-user"></span>
-                                <span class="name">Panel Administratora</span>
-                            </a></li>
-                            <li class="divdiver"><hr/></li>
-                            <li><a class="dropdown-item" href="#">
-                                <span class="icon iconify" data-icon="mdi:logout"></span>
-                                <span class="name">Wyloguj się</span>
-                            </a></li>
-                        </ul>
-                      </div>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-mobile-dropdown">
-                    <ul class="navbar-nav align-items-center ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" data-page="index" aria-current="page" href="/">
-                                <span class="icon iconify" data-icon="mdi:shield-user"></span>
-                                <span class="name">Strona Główna</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item active">
-                            <a class="nav-link" data-page="index" aria-current="page" href="/">
-                                <span class="icon iconify" data-icon="mdi:calendar"></span>
-                                <span class="name">Kalendarz Konsultacji</span>
-                            </a>
-                        </li>
-
-                        <div class="divdiver">
-                            <hr/>
-                        </div>
-
-
-                        <!-- LOG-IN -->
-
-                        <!-- <li class="nav-item">
-                            <a href="/auth/google" id="login-btn" type="button" class="nav-link">
-                                <span class="icon">
-                                    <span class="iconify" data-icon="mdi:google-plus"></span>
-                                </span>
-                                <span class="text">Zaloguj się</span>
-                            </a>
-                        </li> -->
-
-
-                        <!-- AFTER LOG-IN -->
-
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a id="user-data" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-15,32">
-                                    <span id="image">
-                                        <img src="https://via.placeholder.com/64" class="img rounded-circle">
-                                    </span>
-                                    <span id="name" class="text">Tomasz Magiera</span>
-                                </a>
-                            
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">
-                                        <span class="icon iconify" data-icon="mdi:shield-user"></span>
-                                        <span class="name">Panel Administratora</span>
-                                    </a></li>
-                                    <li class="divdiver"><hr/></li>
-                                    <li><a class="dropdown-item" href="#">
-                                        <span class="icon iconify" data-icon="mdi:logout"></span>
-                                        <span class="name">Wyloguj się</span>
-                                    </a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- PAGE CONTENT -->
+    <div id="sidebar"></div>
 
     <div id="content">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div id="page-title">
-                        <span class="icon iconify" data-icon="mdi:home" data-inline="true"> </span>
-                        <span class="title">Kalendarz Konsultacji</span>
-                    </div>
-                </div>
-            </div>
-            <div id="card">
-                <div class="row">
-                    <div class="col">
-                        <div id="data-selector">
-                            <div id="left" class="arrow">
-                                <span class="icon iconify" data-icon="mdi:arrow-left-bold"></span>
-                            </div>
-                            <div id="date" class="info">Wrzesień 2023</div>
-                            <div id="right" class="arrow">
-                                <span class="icon iconify" data-icon="mdi:arrow-right-bold"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div id="calendar">
-                            <div class="table-responsive">
-                                <table id="calendar" class="table table-bordered mb-0 user-select-none">
-                                    <thead>
-                                        <tr class="table-header">
-                                            <th scope="col" class="text-center">Poniedziałek</th>
-                                            <th scope="col" class="text-center">Wtorek</th>
-                                            <th scope="col" class="text-center">Środa</th>
-                                            <th scope="col" class="text-center">Czwartek</th>
-                                            <th scope="col" class="text-center">Piątek</th>
-                                            <th scope="col" class="text-center">Sobota</th>
-                                            <th scope="col" class="text-center">Niedziela</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                       
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id="footer">
-        <div class="container">
-            <div id="footer-text" class="row">
-                <div class="col">
-                    <span>
-                        <a class="link" href="https://github.com/tomci0">tomcio.space</a> &copy; Tomasz Magiera
-                    </span>
-                </div>
-            </div>
+        <div id="topbar">
+        </div>
+
+
+        <!-- PAGE CONTENT -->
+
+        <div id="page-content" class="container-fluid">
+
         </div>
     </div>
 
 
-    <!-- MODALS -->
-
-    <div class="modal" id="consultation-details-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Informacje o Konsultacji</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <div id="informations">
-                                <div class="title">
-                                    <span class="icon iconify" data-icon="mdi:info"></span>
-                                    <span class="value">Informacje:</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:calendar"></span>
-                                    <span class="title">Data:</span>
-                                    <span class="value">12.05.2006r.</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:clock"></span>
-                                    <span class="title">Godzina:</span>
-                                    <span class="value">12:15-13:20</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:book"></span>
-                                    <span class="title">Przedmiot:</span>
-                                    <span class="value">J. Polski</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:account"></span>
-                                    <span class="title">Nauczyciel:</span>
-                                    <span class="value">Jan Kowalski</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:building"></span>
-                                    <span class="title">Budynek:</span>
-                                    <span class="value">J. Szanajcy 5</span>
-                                </div> 
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:door"></span>
-                                    <span class="title">Sala:</span>
-                                    <span class="value">14</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:chair-school"></span>
-                                    <span class="title">Liczba Miejsc:</span>
-                                    <span class="value">14/32</span>
-                                </div> 
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:clock-end"></span>
-                                    <span class="title">Zapisy Do:</span>
-                                    <span class="value">29.05.2024r. 18:30</span>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row h-50">
-                                <div class="col">
-                                    <div id="teacher-info">
-                                        <div class="title">
-                                            <span class="icon iconify" data-icon="mdi:exclamation-thick"></span>
-                                            <span class="value">Informacje Od Nauczyciela:</span>
-                                        </div>
-                                        <div class="value">
-                                            Poprawa sprawdzianów:
-                                                Elo elo 420
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div id="material-range">
-                                        <div class="title">
-                                            <span class="icon iconify" data-icon="mdi:exclamation-thick"></span>
-                                            <span class="value">Zakres spotkania:</span>
-                                        </div>
-                                        <ul id="material">
-                                            <li class="item">
-                                                <span class="value">Sprawdziany z działów 1,2,3</span>
-                                            </li>
-                                            <li class="item">
-                                                <span class="value">Zaległe Kartkówki</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-accept" data-bs-target="#consultation-confirm-modal" data-bs-toggle="modal">
-                        <span class="icon iconify" data-icon="mdi:sign"></span>
-                        <span class="text">Zapisz się</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="consultation-confirm-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Zapisz się na Konsultacje</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <div id="informations">
-                                <div class="title">
-                                    <span class="icon iconify" data-icon="mdi:info"></span>
-                                    <span class="value">Informacje:</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:calendar"></span>
-                                    <span class="title">Data:</span>
-                                    <span class="value">12.05.2006r.</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:clock"></span>
-                                    <span class="title">Godzina:</span>
-                                    <span class="value">12:15-13:20</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:book"></span>
-                                    <span class="title">Przedmiot:</span>
-                                    <span class="value">J. Polski</span>
-                                </div>
-                                <div class="item">
-                                    <span class="icon iconify" data-icon="mdi:account"></span>
-                                    <span class="title">Nauczyciel:</span>
-                                    <span class="value">Jan Kowalski</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="title">
-                                <span class="icon iconify" data-icon="mdi:info"></span>
-                                <span class="value">Cel Wizyty:</span>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="reason-entering" id="sprawdzian" value="0">
-                                <label class="form-check-label" for="sprawdzian">
-                                    Sprawdzian
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="reason-entering" id="kartkowka" value="1" checked>
-                                <label class="form-check-label" for="kartkowka">
-                                    Kartkówka
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="reason-entering" id="nauka" value="2">
-                                <label class="form-check-label" for="nauka">
-                                    Nauka
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="reason-entering" id="inne" value="3">
-                                <label class="form-check-label" for="inne">
-                                    Inne
-                                </label>
-                            </div>
-
-                            <select id="work-type-select" class="form-select" aria-label="Default select example">
-                                <option selected>Wybierz element</option>
-                                <option value="1">Dział 1</option>
-                                <option value="2">Dział 2</option>
-                                <option value="3">Dział 3</option>
-                            </select>
-
-                            <div id="additional-info-input" class="form-floating" style="display: none;">
-                                <textarea class="form-control" id="floatingTextarea2" style="height: 75px"></textarea>
-                                <label for="floatingTextarea2">Wprowadź Powód</label>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-decline" data-bs-target="#consultation-details-modal" data-bs-toggle="modal">
-                        <span class="icon iconify" data-icon="mdi:cancel"></span>
-                        <span class="text">Anuluj</span>
-                    </button>
-                    <button type="button" class="btn btn-accept">
-                        <span class="icon iconify" data-icon="mdi:sign"></span>
-                        <span class="text">Potwierdź</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     
-    <!--
 
-         SCRIPTS 
-    
+    <!-- 
+
+        SCRIPTS
+
     -->
 
     <!-- BOOTSTRAP -->
@@ -436,15 +48,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!-- JQUERY -->
-
+ 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+ 
     <!-- ICONIFY -->
-
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js" integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- OWN SCRIPTS -->
+
     <script src="/js/main.js"></script>
-    <script src="/js/calendar.js"></script>
 
     <script src="/js/pages/calendar.js"></script>
 </body>

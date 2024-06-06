@@ -1,0 +1,84 @@
+
+
+
+/* DARK THEME */
+
+
+html[data-bs-theme="dark"] {
+    
+    /* MAIN VARIABLES */
+
+    --text-color: #ffffffde;
+    --text-secondary: #404040;
+    --text-hover: #019232;
+
+
+    /* BUTTONS */
+
+    --btn-shadow: 0px 0px 4px 0px #000;
+
+    /* THEME COLOR */
+
+    --theme-color: #019232 !important;
+
+    /* BACKGROUND */
+
+    --background: #191919;
+
+    /* 
+    
+        ELEMENTS
+    
+    */
+
+
+    /* SIDEBAR */
+
+    --sidebar-bg: #232323;
+    --sidebar-shadow: 0px 0px 0px #000;
+    --divdiver-color: rgba(255, 255, 255, 0.87);
+
+    /* NAVIGATION */
+
+    --navigation-item-bg: #2E2E2E;
+    --navigation-item-border-radius: 15px;
+    --navigation-item-icon-bg: var(--sidebar-bg);
+    --navigation-item-hover-bg: var(--theme-color);
+    --navigation-item-active-bg: var(--theme-color);
+    --navigation-item-shadow: var(--btn-shadow);
+
+    /* TOPBAR */
+
+    --topbar-background: var(--background);
+
+    --notify-dot: rgba(1, 146, 49, 0.8);
+    --notify-icon-color: #ffffffde;
+
+    /* CARD */
+
+    --card-bg: #232323;
+    --card-btn-bg: rgba(1, 146, 49, 0.2);
+    --card-btn-hover-bg: rgba(1, 146, 49, 0.5);
+    --card-item-bg: #2E2E2E;
+
+
+
+    /* DROPDOWN */
+
+    --dropdown-shadow: 0px 0px 4px 0px #000;
+    
+
+    /* NOTIFY DROPDOWN */
+
+    --notify-more-btn: rgba(5, 99, 36, 0.3);
+    --notify-more-hover-btn: var(--notify-more-active-icon);
+    --notify-more-active-icon: rgba(1, 146, 49, 0.8);
+    --notify-more-border-radius: 15px;
+    
+    --notification-item-bg: #2E2E2E;
+    --notification-item-hover-bg: rgba(46, 46, 46, 0.6);
+
+    /* CHART */
+
+    --chart-track-color: rgba(1, 146, 49, 0.8);
+}
