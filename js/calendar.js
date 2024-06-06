@@ -1,3 +1,22 @@
+/*
+
+    ON PAGE LOAD
+
+*/
+
+$(() => {
+    setCalendar();
+})
+
+
+/*
+
+
+    FUNCTIONS
+
+
+*/
+
 function getDaysTable(year, month) {
     var daysTable = [];
     var firstDay = new Date(year, month, 1);
@@ -72,7 +91,9 @@ function setCalendar(year, month) {
 
     const currentCalendarArray = getDaysTable(year, month);
     $('#calendar tbody').html('');
+    let numberOfElements = 0;
     for (var i = 0; i < currentCalendarArray.length; i++) {
+        numberOfElements++;
         var week = currentCalendarArray[i];
         var weekRow = document.createElement('tr');
     
@@ -80,6 +101,7 @@ function setCalendar(year, month) {
             var day = week[j];
             var dayCell = document.createElement('td');
             if (day) {
+                const rndColor = randomColor();
                 dayCell.setAttribute('date-day', day);
                 dayCell.innerHTML = `
                 <div class="day-month">
@@ -88,7 +110,7 @@ function setCalendar(year, month) {
                     </div>
                 </div>
                 <div class="plate-list">
-                    <div class="plate ${randomColor()}">
+                    <div class="plate ${rndColor}" data-bs-toggle="modal" data-bs-target="#consultation-details-modal">
                         <span class="time">12:12-15:15</span>
                         <span class="value">
                             <div class="item">
@@ -97,9 +119,61 @@ function setCalendar(year, month) {
                             </div>
                             <div class="item">
                                 <span class="iconify" data-icon="mdi:book" data-inline="false"></span>
-                                <span class="teacher-name">J. Polski</span>
+                            <span class="teacher-name">J. Polski</span>
                             </div>
                         </span>
+                    </div>
+
+                    <a class="plate ${rndColor}" data-bs-toggle="collapse" href="#first${day}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="time">12:12-15:15</span>
+                        <span class="value">
+                            <div class="item">
+                                <span class="iconify" data-icon="mdi:arrow-down-bold" data-inline="false"></span>
+                                <span class="teacher-name">5 elementów</span>
+                            </div>
+                        </span>
+                    </a>
+
+                    <div class="collapse" id="first${day}">
+                        <div class="plate ${rndColor}">
+                            <span class="time">12:12-15:15</span>
+                            <span class="value">
+                                <div class="item">
+                                    <span class="iconify" data-icon="mdi:person" data-inline="false"></span>
+                                    <span class="teacher-name">Jan Kowalski</span>
+                                </div>
+                                <div class="item">
+                                    <span class="iconify" data-icon="mdi:book" data-inline="false"></span>
+                                <span class="teacher-name">J. Polski</span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+
+                    <a class="plate ${rndColor}" data-bs-toggle="collapse" href="#second${day}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="time">12:12-15:15</span>
+                        <span class="value">
+                            <div class="item">
+                                <span class="iconify" data-icon="mdi:arrow-down-bold" data-inline="false"></span>
+                                <span class="teacher-name">5 elementów</span>
+                            </div>
+                        </span>
+                    </a>
+
+                    <div class="collapse" id="second${day}">
+                        <div class="plate ${rndColor}" data-bs-toggle="modal" data-bs-target="#consultation-details-modal">
+                            <span class="time">12:12-15:15</span>
+                            <span class="value">
+                                <div class="item">
+                                    <span class="iconify" data-icon="mdi:person" data-inline="false"></span>
+                                    <span class="teacher-name">Jan Kowalski</span>
+                                </div>
+                                <div class="item">
+                                    <span class="iconify" data-icon="mdi:book" data-inline="false"></span>
+                                <span class="teacher-name">J. Polski</span>
+                                </div>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 `;
@@ -111,12 +185,21 @@ function setCalendar(year, month) {
         }
 
        $('#calendar tbody').append(weekRow) 
+
+       $('.plate[data-bs-toggle="collapse"]').each((i, e) => {
+            const target = $(e).attr('href')
+            $(target).on('shown.bs.collapse', () => {
+                $(e).addClass('collapsed');
+            });
+
+            $(target).on('hidden.bs.collapse', () => {
+                $(e).removeClass('collapsed')
+            })
+        });
     }
 
     refreshCalendarContent();
 }
-
-setCalendar();
 
 function randomColor() {
     const options = [
@@ -133,3 +216,31 @@ function randomColor() {
 
     return options[Math.floor(Math.random() * options.length)];
 }
+
+/*
+
+    CALENDAR ITEM
+
+    <div class="day-month">
+        <div class="day ${year == new Date().getFullYear() & month == new Date().getMonth() & day == new Date().getDate()?'active':''}">
+            <span>${day}</span>
+        </div>
+    </div>
+    <div class="plate-list">
+        <div class="plate ${randomColor()}">
+            <span class="time">12:12-15:15</span>
+            <span class="value">
+                <div class="item">
+                    <span class="iconify" data-icon="mdi:person" data-inline="false"></span>
+                    <span class="teacher-name">Jan Kowalski</span>
+                </div>
+                <div class="item">
+                    <span class="iconify" data-icon="mdi:book" data-inline="false"></span>
+                    <span class="teacher-name">J. Polski</span>
+                </div>
+            </span>
+        </div>
+    </div>
+
+
+*/

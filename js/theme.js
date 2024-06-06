@@ -18,7 +18,7 @@
         const setTheme = theme => {
             document.documentElement.setAttribute('data-bs-theme', theme);
 
-            $('.change-theme').each((i, el) => {
+            $('#theme-toggle').each((i, el) => {
                 const btn = $(el)
 
                 const $icon = btn.find('.iconify')
@@ -43,7 +43,7 @@
     
         // each document query selector
     
-        $('.change-theme').each((i, el) => {
+        $('#theme-toggle').each((i, el) => {
             const $btn = $(el);
 
             $btn.on('click', () => {

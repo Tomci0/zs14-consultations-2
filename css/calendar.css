@@ -40,6 +40,8 @@
     align-items: center;
     justify-content: flex-end;
     height: 25px;
+
+    margin-bottom: 0.50rem;
 }
 #calendar .day-month span {
     font-size: 14px;
@@ -67,17 +69,41 @@
 #calendar .plate-list .value {
     display: flex;
     flex-direction: column;
+
+    margin-left: 0.25rem;
 }
 
 #calendar .plate-list .plate {
     display: flex;
     flex-direction: column;
     border-left: solid 4px transparent;
-    padding: 5px 10px;
+    padding: 5px;
     line-height: 12px;
     cursor: pointer;
     box-shadow: var(--shadow);
+
+    border-radius: 5px;
+
+    background: var(--calendar-plate-bg);
+
+    color: inherit; /* Ustawia kolor tekstu na taki sam jak element nadrzędny */
+    text-decoration: none; /* Usuwa podkreślenie */
+
+    transition: 0.2s;
 }
+
+#calendar .plate-list .plate.collapsed {
+    background-color: var(--calendar-plate-active-bg) !important;
+}
+
+#calendar .plate-list .plate:hover {
+    background-color: var(--calendar-plate-hover-bg);
+}
+
+#calendar .plate-list .collapse .plate, #calendar .plate-list .collapsing .plate {
+    margin-left: 0.50rem;
+}
+
 #calendar .plate-list .plate.my-consultation {
     background-color: rgba(0,0,0,0.1);
 }
@@ -121,4 +147,183 @@
     
 #calendar tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
+}
+
+a:active,
+a:focus { 
+    -moz-outline-style: none; 
+    outline: 0;
+    color: var(--text-hover);
+}
+
+/* MODAL */
+
+.modal-content {
+    background-color: var(--modal-background);
+    color: var(--text-color);
+    border-radius: var(--modal-border-radius);
+}
+
+.modal-header {
+    background: var(--modal-header-background);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    height: 100px;
+
+    border-radius: var(--modal-border-radius);
+}
+
+.modal-header .modal-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px !important;
+    text-shadow: 0 0 5px #000;
+}
+
+#consultation-details-modal #title {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer .btn {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.modal-footer .btn.btn-accept {
+    border: 1px solid var(--btn-accept-color);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.modal-footer .btn.btn-decline {
+    border: 1px solid var(--btn-decline-color);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.modal-footer .btn.btn-accept:hover {
+    background-color: var(--btn-accept-color);
+}
+
+.modal-footer .btn.btn-decline:hover {
+    background-color: var(--btn-decline-color);
+}
+
+.modal-footer .btn .icon {
+    font-size: 1rem;
+}
+
+/* #consultation-details-modal .modal-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+.modal #informations .item .icon {
+    font-size: 1rem;
+
+    background-color: var(--background);
+}
+
+.modal #informations .item .title {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.modal #informations .item .value {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.modal .title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.modal .title .icon {
+    font-size: 1.1rem;
+}
+
+.modal .title .value {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.form-check-input {
+    background-color: var(--radio-check-input-bg);
+}
+
+.form-check-input:checked {
+    background-color: var(--radio-checked-input-bg);
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+    border-color: none;
+}
+
+.form-select {
+    color: var(--text-color);
+    background-color: var(--select-background);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.form-select:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+#additional-info-input textarea {
+    background-color: var(--textarea-background);
+}
+
+#additional-info-input label::after {
+    background-color: transparent;
+}
+
+#data-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#data-selector .icon {
+    font-size: 1.2rem;
+}
+
+#data-selector .arrow {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#data-selector .arrow:hover {
+    color: var(--text-hover)
+}
+
+#data-selector #date {
+    font-weight: 300;
+    font-size: 1.1rem;
+
+    margin: 0.75rem;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+#data-selector #date:hover {
+    color: var(--text-hover);
 }

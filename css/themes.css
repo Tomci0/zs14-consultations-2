@@ -12,7 +12,7 @@ html[data-bs-theme="light"] * {
 
     /* THEME COLOR */
 
-    --theme-color: #5e5f5e;
+    --theme-color: #019232 !important;
 
     /* SHADOW */
 
@@ -27,38 +27,78 @@ html[data-bs-theme="light"] * {
     --nav-btn-color: #e0e0e0;
     --nav-btn-hover: 0px 1px 1px rgba(0, 0, 0, 0.5);
 
-    --nav-link-color: #191919;
     --nav-link-active-background: #019232;
+    --navbar-image-shadow: -1px 1px 8px 2px rgba(0, 0, 0, 0.5);
+    --navigation-button-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 
     --header-border-radius: 0 0 15px 15px;
-
-
-
-    --border-top: 1px solid rgba(35, 35, 35, 0.2);
 
     /* FOOTER */
 
     --footer-border-radius: 15px 15px 0 0;
     --footer-color: rgba(255, 255, 255, 0.87);
+    --footer-border-radius: 15px 15px 0 0;
 
-    /* DROPDONW */
+    /* TOOLTIP */
 
-    --bs-dropdown-bg: rgba(238, 238, 238, 1);
-    --bs-border-color-translucent: 0;
-    --bs-border-width: 0;
+    --tooltip-background: #242424;
+    --tooltip-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 
-    --divdiver-color: rgba(64, 64, 64, 0.2);
+    /* DROPDOWN */
+
+    --dropdown-background: rgba(238, 238, 238, 0.9);
+
+    /* COLLAPSE */
+
+    --collapse-text-color: rgba(255, 255, 255, 0.87);
+    --collapse-background: #e0e0e0;
+
 
     /* CALENDAR */
 
+    --calendar-plate-bg: #e0e0e0;
     --calendar-hover: rgba(1, 146, 49, 0.2);
     --calendar-shadow: -0.5px 0.5px 0px 0px rgba(0, 0, 0, 0.15);
     --calendar-active: #3b933f;
     --calendar-day-number-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 
+
     /* PAGE TITLE */
 
     --title-color: rgba(255, 255, 255, 0.87);
+
+    /* 
+    
+        BOOTSTRAP 
+    
+    */
+
+    --bs-border-width: 0;
+    --bs-border-color-translucent: 0;
+
+    /* MODAL */
+
+    --modal-background: rgba(238, 238, 238, 0.9);
+    --modal-border-radius: 15px;
+    --modal-header-background: url('/images/modal-background.avif');
+
+    /* BUTTONS */
+
+    --btn-decline-color: #be0000;
+    --btn-accept-color: #019232;
+
+    /* RADIO */
+
+    --radio-check-input-bg: #fff;
+    --radio-checked-input-bg: #019232;
+
+    /* SELECT */
+
+    --select-background: rgba(255, 255, 255, 0.8);
+
+    /* TEXTAREA */
+
+    --textarea-background: rgba(35, 35, 35, 0.9);
 
     /* 
 
@@ -66,57 +106,153 @@ html[data-bs-theme="light"] * {
 
     */
 
-    /* /pages/index.css */
+    /* index.css */
 
     --index-text-color: rgba(255, 255, 255, 0.87);
+
+
+    /* user */
+
+    --user-image-shadow: -1px 1px 8px 2px rgba(0, 0, 0, 0.5);
+
+    /* 
+
+        OTHER
+
+    */
+
+    --border-radius: 10px;
+    --border-top: 1px solid rgba(35, 35, 35, 0.2);
+
+    --divdiver-color: rgba(64, 64, 64, 0.2);
+
 }
 
 /* DARK THEME */
 
 html[data-bs-theme="dark"] * {
     --body-background: url(/images/background.jpg);
+
+    /* TEXT COLORS */
+
     --text-color: rgba(255, 255, 255, 0.87);
     --text-hover: #019232;
     --text-secondary: #404040;
 
+    /* THEME COLOR */
+
     --theme-color: #019232 !important;
+
+    /* SHADOW */
 
     --shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 
+    /* BACKGROUND */
+
     --background: rgba(35, 35, 35, 0.9);
+
+    /* NAVBAR */
 
     --nav-btn-color: #2E2E2E;
     --nav-btn-hover: 0px 1px 1px rgba(0, 0, 0, 0.5);
 
-    --border-top: 1px solid rgba(255, 255, 255, 0.15);
+    --nav-link-active-background: #019232;
 
-    --nav-link-color: #e0e0e0;
+    --navbar-image-shadow: -1px 1px 8px 2px rgba(0, 0, 0, 0.5);
+    --navigation-button-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 
     --header-border-radius: 0 0 15px 15px;
 
+    /* FOOTER */
+
     --footer-border-radius: 15px 15px 0 0;
     --footer-color: rgba(255, 255, 255, 0.87);
+    --footer-border-radius: 15px 15px 0 0;
 
+    /* TOOLTIP */
 
-    --nav-link-active-background: #019232;
+    --tooltip-background: #242424;
+    --tooltip-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 
-    --bs-dropdown-bg: #2E2E2E;
-    --bs-border-color-translucent: 0;
+    /* DROPDOWN */
 
-    --bs-border-width: 0;
+    --dropdown-background: rgba(35, 35, 35, 0.9);
 
-    --dropdown-item-border: 1px solid rgba(255, 255, 255, 0.15);
+    /* COLLAPSE */
 
-    --divdiver-color: rgba(238, 238, 238, 0.2);
+    --collapse-text-color: rgba(255, 255, 255, 0.87);
+    --collapse-background: #242424;
 
+    /* CALENDAR */
+
+    --calendar-hover: rgba(1, 146, 49, 0.2);
     --calendar-hover: rgba(255, 255, 255, 0.1);
     --calendar-shadow: -0.5px 0.5px 0px 0px rgba(0, 0, 0, 0.5);
     --calendar-active: #3b933f;
     --calendar-day-number-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    --calendar-plate-hover-bg: rgba(59, 147, 63, 0.7);
+    --calendar-plate-active-bg: rgba(59, 147, 63, 0.7);
+
+    /* PAGE TITLE */
 
     --title-color: rgba(255, 255, 255, 0.87);
+
+    /* 
+    
+        BOOTSTRAP 
+    
+    */
+
+    --bs-border-width: 0;
+    --bs-border-color-translucent: 0;
+
+    /* MODAL */
+
+    --modal-background: rgba(35, 35, 35, 0.97);
+    --modal-border-radius: 15px;
+    --modal-header-background: url('/images/modal-background.avif');
+    
+    /* BUTTONS */
+
+    --btn-decline-color: #be0000;
+    --btn-accept-color: #019232;
+
+    /* RADIO */
+
+    --radio-check-input-bg: #2E2E2E;
+    --radio-checked-input-bg: #019232;
+
+    /* SELECT */
+
+    --select-background: #2E2E2E;
+
+    /* TEXTAREA */
+
+    --textarea-background: #2E2E2E;
+
+    /* 
+    
+        PAGES
+    
+    */
 
     /* index.css */
 
     --index-text-color: rgba(255, 255, 255, 0.87);
+
+    /* user */
+
+    --user-image-shadow: -1px 1px 8px 2px rgba(0, 0, 0, 0.5);
+
+
+    /* 
+    
+        OTHER
+    
+    */
+
+    --border-radius: 10px;
+    --border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    --divdiver-color: rgba(238, 238, 238, 0.2);
 }
