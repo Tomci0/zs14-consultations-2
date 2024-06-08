@@ -56,10 +56,16 @@ $(async () => {
                     display: true,
                     position: 'bottom',
                     labels: {
+                        boxWidth: 12,
+                        boxHeight: 12,
+                        useBorderRadius: true,
+                        borderRadius: 12,
                         color: labelColor,
                         font: {
-                            size: 13,
-                            weight: 300
+                            family: 'Roboto, sans-serif',
+                            size: 10,
+                            weight: 300,
+                            style: 'normal',
                         }
                     },
                     maxWidth: '100%', 

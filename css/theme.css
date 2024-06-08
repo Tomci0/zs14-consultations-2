@@ -35,8 +35,8 @@ html[data-bs-theme="dark"] {
     /* SIDEBAR */
 
     --sidebar-bg: #232323;
-    --sidebar-shadow: 0px 0px 0px #000;
-    --divdiver-color: rgba(255, 255, 255, 0.87);
+    --sidebar-shadow: inset 0px 1px 5px 0px #000;
+    --divdiver-color: rgba(255, 255, 255, 0.4);
 
     /* NAVIGATION */
 
@@ -60,6 +60,8 @@ html[data-bs-theme="dark"] {
     --card-btn-bg: rgba(1, 146, 49, 0.2);
     --card-btn-hover-bg: rgba(1, 146, 49, 0.5);
     --card-item-bg: #2E2E2E;
+    --card-item-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.6);
+    --card-item-hover-bg: rgba(1, 146, 49, 0.3);
 
 
 

@@ -37,6 +37,16 @@
 
     background-color: var(--card-item-bg);
     padding: 0.5rem;
+    border-radius: 5px;
+
+    box-shadow: var(--card-item-shadow);
+
+    transition: 0.2s;
+}
+
+#today-consultations .item:hover {
+    cursor: pointer;
+    background-color: var(--card-item-hover-bg);
 }
 
 #today-consultations .item .data {
@@ -51,17 +61,17 @@
 }
 
 #today-consultations .item .data .title {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-weight: 400;
 }
 
 #today-consultations .item .data .date {
     font-weight: 300;
-    font-size: 1.0rem;
+    font-size: .8rem;
 }
 
 #today-consultations .item .values .icon {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 #today-consultations .item .values .value {
