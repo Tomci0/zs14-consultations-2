@@ -1,0 +1,70 @@
+/* base/_theme.dark.scss */
+
+/* Dark Theme Variables */
+$dark-text-color: #ffffffde;
+$dark-text-secondary: #404040;
+$dark-text-hover: #019232;
+$dark-btn-shadow: 0px 0px 4px 0px #000;
+$dark-theme-color: #019232 !important;
+$dark-background: #191919;
+$dark-sidebar-bg: #232323;
+$dark-sidebar-shadow: inset 0px 1px 5px 0px #000;
+$dark-divdiver-color: rgba(255, 255, 255, 0.4);
+$dark-navigation-item-bg: #2e2e2e;
+$dark-navigation-item-border-radius: 15px;
+$dark-navigation-item-icon-bg: $dark-sidebar-bg;
+$dark-navigation-item-hover-bg: $dark-theme-color;
+$dark-navigation-item-active-bg: $dark-theme-color;
+$dark-navigation-item-shadow: $dark-btn-shadow;
+$dark-topbar-background: $dark-background;
+$dark-notify-dot: rgba(1, 146, 49, 0.8);
+$dark-notify-icon-color: #ffffffde;
+$dark-card-bg: #232323;
+$dark-card-btn-bg: rgba(1, 146, 49, 0.2);
+$dark-card-btn-hover-bg: rgba(1, 146, 49, 0.5);
+$dark-card-item-bg: #2e2e2e;
+$dark-card-item-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.6);
+$dark-card-item-hover-bg: rgba(1, 146, 49, 0.3);
+$dark-dropdown-shadow: 0px 0px 4px 0px #000;
+$dark-notify-more-btn: rgba(5, 99, 36, 0.3);
+$dark-notify-more-hover-btn: rgba(1, 146, 49, 0.5);
+$dark-notify-more-active-icon: rgba(1, 146, 49, 0.8);
+$dark-notify-more-border-radius: 15px;
+$dark-notification-item-bg: #2e2e2e;
+$dark-notification-item-hover-bg: rgba(46, 46, 46, 0.6);
+$dark-chart-track-color: rgba(1, 146, 49, 0.8);
+
+html[data-bs-theme="dark"] {
+  --text-color: #{$dark-text-color};
+  --text-secondary: #{$dark-text-secondary};
+  --text-hover: #{$dark-text-hover};
+  --btn-shadow: #{$dark-btn-shadow};
+  --theme-color: #{$dark-theme-color};
+  --background: #{$dark-background};
+  --sidebar-bg: #{$dark-sidebar-bg};
+  --sidebar-shadow: #{$dark-sidebar-shadow};
+  --divdiver-color: #{$dark-divdiver-color};
+  --navigation-item-bg: #{$dark-navigation-item-bg};
+  --navigation-item-border-radius: #{$dark-navigation-item-border-radius};
+  --navigation-item-icon-bg: #{$dark-navigation-item-icon-bg};
+  --navigation-item-hover-bg: #{$dark-navigation-item-hover-bg};
+  --navigation-item-active-bg: #{$dark-navigation-item-active-bg};
+  --navigation-item-shadow: #{$dark-navigation-item-shadow};
+  --topbar-background: #{$dark-topbar-background};
+  --notify-dot: #{$dark-notify-dot};
+  --notify-icon-color: #{$dark-notify-icon-color};
+  --card-bg: #{$dark-card-bg};
+  --card-btn-bg: #{$dark-card-btn-bg};
+  --card-btn-hover-bg: #{$dark-card-btn-hover-bg};
+  --card-item-bg: #{$dark-card-item-bg};
+  --card-item-shadow: #{$dark-card-item-shadow};
+  --card-item-hover-bg: #{$dark-card-item-hover-bg};
+  --dropdown-shadow: #{$dark-dropdown-shadow};
+  --notify-more-btn: #{$dark-notify-more-btn};
+  --notify-more-hover-btn: #{$dark-notify-more-hover-btn};
+  --notify-more-active-icon: #{$dark-notify-more-active-icon};
+  --notify-more-border-radius: #{$dark-notify-more-border-radius};
+  --notification-item-bg: #{$dark-notification-item-bg};
+  --notification-item-hover-bg: #{$dark-notification-item-hover-bg};
+  --chart-track-color: #{$dark-chart-track-color};
+}

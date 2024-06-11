@@ -1,80 +1,34 @@
-/* 
-
-    Project Name: ZS 14 - Konsultacje
-    Author: Tomasz Magiera (https://tomcio.space)
-    Start Date: 6.06.2024r.
-
-
-    Contributors:
-        - Tomasz Magiera (https://github.com/tomci0)
-
-
-
-    Description:
-
-        - Jeśli edytujesz ten plik, dodaj swój wpis powyżej.
-        - Projekt ma na celu stworzenie systemu do zarządzania konsultacjami w szkole.
-        - Jest to projekt open-source, więc każdy może pomóc w jego rozwoju.
-
-        - Proszę opisywać zmiany, które wprowadzasz w projekcie.
-        - Proszę opisywać nowe rzezy, które dodajesz do projektu.
-
-*/
-
-
-/* TODAY CONSULTATIONS CARD */
-
 #today-consultations {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#today-consultations .item {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  #today-consultations .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: var(--card-item-bg);
     padding: 0.5rem;
     border-radius: 5px;
-
     box-shadow: var(--card-item-shadow);
-
-    transition: 0.2s;
-}
-
-#today-consultations .item:hover {
-    cursor: pointer;
-    background-color: var(--card-item-hover-bg);
-}
-
-#today-consultations .item .data {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#today-consultations .item .image .icon {
-    font-size: 2.1rem;
-}
-
-#today-consultations .item .data .title {
-    font-size: 1.0rem;
-    font-weight: 400;
-}
-
-#today-consultations .item .data .date {
-    font-weight: 300;
-    font-size: .8rem;
-}
-
-#today-consultations .item .values .icon {
-    font-size: 1.0rem;
-}
-
-#today-consultations .item .values .value {
-    font-size: 0.8rem;
-    font-weight: 300;
-}
+    transition: 0.2s; }
+    #today-consultations .item:hover {
+      cursor: pointer;
+      background-color: var(--card-item-hover-bg); }
+    #today-consultations .item .data {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+    #today-consultations .item .image .icon {
+      font-size: 1.9rem; }
+    #today-consultations .item .data .title {
+      font-size: 0.9rem;
+      font-weight: 400; }
+    #today-consultations .item .data .date {
+      font-weight: 300;
+      font-size: 0.7rem; }
+    #today-consultations .item .values .icon {
+      font-size: .9rem; }
+    #today-consultations .item .values .value {
+      font-size: 0.65rem;
+      font-weight: 300; }
