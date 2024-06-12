@@ -1,11 +1,13 @@
 #today-consultations {
   display: flex;
   flex-direction: column;
-  width: 100%; }
+  gap: 0.5rem;
+  width: 100%;
+  max-height: 28rem;
+  overflow: auto;
+  padding: 0;
+  list-style: none; }
   #today-consultations .item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--card-item-bg);
     padding: 0.5rem;
     border-radius: 5px;

@@ -397,8 +397,7 @@ html[data-bs-theme="light"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  display: block;
-  height: 100%; }
+  display: block; }
   .card .card-header {
     border: none;
     font-weight: 400;
