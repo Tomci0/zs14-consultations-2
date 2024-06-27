@@ -1,0 +1,35 @@
+#consultation-checklist-modal {
+    #checklist {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0.25rem;
+
+        list-style-type: none;
+        margin-right: 1.5rem;
+
+        .head {
+            font-weight: 400;
+
+            .name {
+                margin-left: 1rem;
+            }
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .check {
+                width: 30%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .name {
+                width: 70%;
+            }
+        }
+    }
+}

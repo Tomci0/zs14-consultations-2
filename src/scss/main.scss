@@ -51,6 +51,8 @@
 @import 'components/dropdown';
 @import 'components/divdiver';
 @import 'components/card';
+@import 'components/modal';
+@import 'components/inputs';
 
 
 /* 
@@ -80,7 +82,6 @@ body {
 
     min-height: 100vh;
 
-
     background: var(--background);
     background-size: cover; /* Skaluje obraz, aby w pełni zakryć obszar */
     background-repeat: no-repeat; /* Zapobiega powtarzaniu obrazu */
@@ -98,6 +99,8 @@ body {
 #content {
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
 }
 
 #page-content {

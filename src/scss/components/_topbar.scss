@@ -43,7 +43,7 @@
                 position: absolute;
                 display: flex;
                 top: 1.5rem;
-                right: 12.2rem;
+                right: 12.0rem;
                 height: 7.5px;
                 width: 7.5px;
                 background-color: var(--notify-dot);
@@ -101,14 +101,10 @@
             }
         }
 
-        #theme-toggle {
+        .btn {
             color: var(--text-color);
-            font-size: 1.2em;
+            font-size: 0.9em;
             transition: 0.2s;
-
-            &:hover {
-                color: var(--text-hover);
-            }
         }
 
         #user-data {

@@ -34,6 +34,16 @@ $dark-notification-item-bg: #2e2e2e;
 $dark-notification-item-hover-bg: rgba(46, 46, 46, 0.6);
 $dark-chart-track-color: rgba(1, 146, 49, 0.8);
 
+$dark-modal-background: #{$dark-background};
+$dark-modal-header-background: url('/images/background.jpg');
+$dark-modal-box-shadow: 0px 0px 4px 0px #000;
+
+$dark-btn-accept-color: #019232;
+$dark-btn-decline-color: #be0000;
+
+$dark-checkbox-bg-color: #232323;
+$dark-checkbox-box-shadow: 0px 1px 2px 0px #000;
+
 html[data-bs-theme="dark"] {
   --text-color: #{$dark-text-color};
   --text-secondary: #{$dark-text-secondary};
@@ -67,4 +77,24 @@ html[data-bs-theme="dark"] {
   --notification-item-bg: #{$dark-notification-item-bg};
   --notification-item-hover-bg: #{$dark-notification-item-hover-bg};
   --chart-track-color: #{$dark-chart-track-color};
+
+  --modal-background: #{$dark-modal-background};
+  --modal-header-background: #{$dark-modal-header-background};
+  --modal-box-shadow: #{$dark-modal-box-shadow};
+
+  --btn-accept-color: #{$dark-btn-accept-color};
+  --btn-decline-color: #{$dark-btn-decline-color};
+
+  --checkbox-bg-color: #{$dark-checkbox-bg-color};
+  --checkbox-box-shadow: #{$dark-checkbox-box-shadow};
+
+  // CALENDAR
+
+  --calendar-hover: rgba(1, 146, 49, 0.2);
+  --calendar-hover: rgba(255, 255, 255, 0.1);
+  --calendar-shadow: -0.5px 0.5px 0px 0px rgba(0, 0, 0, 0.5);
+  --calendar-active: #3b933f;
+  --calendar-day-number-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  --calendar-plate-hover-bg: rgba(59, 147, 63, 0.7);
+  --calendar-plate-active-bg: rgba(59, 147, 63, 0.7);
 }

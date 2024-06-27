@@ -11,20 +11,19 @@
 
 
     <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="stylesheet" href="/css/pages/index.css">
+    <link rel="stylesheet" href="/css/pages/index.min.css">
 
 </head>
 <body>
 
     <!-- SIDEBAR -->
 
-    <div id="sidebar"></div>
+    <!-- @@include('sidebar.html') -->
 
     <div id="content">
+        <!-- PAGE CONTENT -->
 
-        <div id="topbar">
-
-        </div>
+        <!-- @@include('topbar.html') -->
 
 
         <!-- PAGE CONTENT -->
@@ -98,28 +97,28 @@
                         <div class="card-body">
                             <ul id="today-consultations">
 
-                                <li class="item">
-                                    <div class="row">
-                                        <div class="d-none d-md-flex col-2">
+                                <li class="item" data-bs-target="#consultation-details-modal" data-bs-toggle="modal">
+                                    <div class="row w-100 align-items-center">
+                                        <div class="d-none d-md-flex col-3">
                                             <div class="image">
                                                 <span class="icon iconify" data-icon="mdi:person"></span>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-8 col-md-6">
                                             <div class="data">
                                                 <div class="title">Konsultacje Z Matematyki</div>
                                                 <div class="date">Dzisiaj, 12:15</div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-4">
+                                        <div class="col-4 col-lg-3 d-flex justify-content-end">
                                             <div class="values">
                                                 <div class="value">
                                                     <span class="icon iconify" data-icon="mdi:door"></span>
                                                     <span class="value">35</span>
                                                 </div>
                                                 <div class="value">
-                                                    <div class="icon iconify" data-icon="mdi:building"></div>
-                                                    <div class="value">Szanajcy 14/16</div>
+                                                    <span class="icon iconify" data-icon="mdi:building"></span>
+                                                    <span class="value">Szanajcy 14/16</span>
                                                 </div>
                                                 <div class="value">
                                                     <span class="icon iconify" data-icon="mdi:account"></span>
@@ -129,22 +128,6 @@
                                         </div>
                                     </div>
                                 </li>
-
-                                <!-- <div class="item">
-                                    <div class="row w-100">
-                                        <div class="col-3">
-                                            <div class="image">
-                                                <span class="icon iconify" data-icon="mdi:person"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            
-                                        </div>
-                                        <div class="col-3">
-                                            
-                                        </div>
-                                    </div>
-                                </div> -->
                             </ul>
                         </div>
                     </div>
@@ -154,8 +137,18 @@
     </div>
 
 
-
+    <!-- 
+        
+        MODALS 
     
+    -->
+
+    <!-- Consultation details -->
+
+    <!-- @@include('modals/consultation-details.html') -->
+    <!-- @@include('modals/consultation-members.html') -->
+    <!-- @@include('modals/consultation-checklist.html') -->
+
 
     <!-- 
 
@@ -179,8 +172,8 @@
     
     <!-- OWN SCRIPTS -->
 
-    <script src="/js/main.js"></script>
+    <script src="/js/main.min.js"></script>
 
-    <script src="/js/pages/index.js"></script>
+    <script src="/js/pages/index.min.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
     border: none;
     flex-direction: row;
     display: block;
+    margin-bottom: 0.5rem;
 
     .card-header {
         border: none;
@@ -13,6 +14,12 @@
         align-items: center;
 
         .link {
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .25rem;
+
             font-weight: 300;
             font-size: 0.7rem;
             background-color: var(--notify-more-btn);
