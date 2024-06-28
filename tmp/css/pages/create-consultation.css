@@ -1,0 +1,83 @@
+#add-consultation {
+  height: 30rem;
+  width: 100%; }
+  #add-consultation #create-consultation-form-carousel {
+    height: 100%; }
+    #add-consultation #create-consultation-form-carousel #indicators .carousel-indicators {
+      position: relative; }
+      #add-consultation #create-consultation-form-carousel #indicators .carousel-indicators [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        padding: 0;
+        margin-right: 3px;
+        margin-left: 3px;
+        margin-top: 10px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: var(--indicator-bg);
+        background-clip: padding-box;
+        border: 0;
+        opacity: .5;
+        transition: opacity .6s ease;
+        box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.7); }
+        #add-consultation #create-consultation-form-carousel #indicators .carousel-indicators [data-bs-target].active {
+          background-color: var(--indicator-active-bg); }
+    #add-consultation #create-consultation-form-carousel #indicators .carousel-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem; }
+    #add-consultation #create-consultation-form-carousel .carousel-inner {
+      height: 80%; }
+    #add-consultation #create-consultation-form-carousel .stage-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem; }
+      #add-consultation #create-consultation-form-carousel .stage-title .icon {
+        font-size: 1.3rem; }
+      #add-consultation #create-consultation-form-carousel .stage-title .title {
+        font-size: 1.0rem;
+        font-weight: 400; }
+    #add-consultation #create-consultation-form-carousel .btn {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem; }
+      #add-consultation #create-consultation-form-carousel .btn .icon {
+        font-size: 1.0rem; }
+      #add-consultation #create-consultation-form-carousel .btn .title {
+        font-weight: 300;
+        font-size: 0.8rem; }
+      #add-consultation #create-consultation-form-carousel .btn.btn-next {
+        border: 1px solid var(--btn-next-bg); }
+        #add-consultation #create-consultation-form-carousel .btn.btn-next:hover {
+          background-color: var(--btn-next-bg); }
+      #add-consultation #create-consultation-form-carousel .btn.btn-prev {
+        border: 1px solid var(--btn-prev-bg); }
+        #add-consultation #create-consultation-form-carousel .btn.btn-prev:hover {
+          background-color: var(--btn-prev-bg); }
+    #add-consultation #create-consultation-form-carousel input, #add-consultation #create-consultation-form-carousel select, #add-consultation #create-consultation-form-carousel textarea {
+      background: var(--background);
+      outline: none;
+      border: none;
+      font-size: 0.8rem;
+      font-weight: 300;
+      box-shadow: -1px 1px 1px 0 rgba(0, 0, 0, 0.3); }
+    #add-consultation #create-consultation-form-carousel input:disabled, #add-consultation #create-consultation-form-carousel select:disabled, #add-consultation #create-consultation-form-carousel textarea:disabled {
+      color: var(--input-disabled); }
+    #add-consultation #create-consultation-form-carousel .form-floating > .form-control:focus ~ label::after {
+      background-color: var(--background); }
+    #add-consultation #create-consultation-form-carousel #filters {
+      display: flex;
+      gap: 1rem; }
+    #add-consultation #create-consultation-form-carousel input[type="checkbox"]:checked {
+      background-color: var(--theme-color); }
+    #add-consultation #create-consultation-form-carousel label {
+      font-weight: 400;
+      margin-bottom: 0.25rem; }
+    #add-consultation #create-consultation-form-carousel #consultation-desc {
+      height: 12rem;
+      font-size: 0.8rem; }

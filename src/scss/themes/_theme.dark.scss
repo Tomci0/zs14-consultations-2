@@ -3,9 +3,9 @@
 /* Dark Theme Variables */
 $dark-text-color: #ffffffde;
 $dark-text-secondary: #404040;
-$dark-text-hover: #019232;
-$dark-btn-shadow: 0px 0px 4px 0px #000;
-$dark-theme-color: #019232 !important;
+$dark-text-hover: #2fa255;
+$dark-btn-shadow: -1px 1px 5px 0px #0000004f;
+$dark-theme-color: #920101 !important;
 $dark-background: #191919;
 $dark-sidebar-bg: #232323;
 $dark-sidebar-shadow: inset 0px 1px 5px 0px #000;
@@ -43,6 +43,16 @@ $dark-btn-decline-color: #be0000;
 
 $dark-checkbox-bg-color: #232323;
 $dark-checkbox-box-shadow: 0px 1px 2px 0px #000;
+
+$dark-datepicker-bg: #191919;
+
+$dark-btn-next-bg: #{$dark-theme-color};
+$dark-btn-prev-bg: #be0000;
+
+$dark-indicator-bg: #191919;
+$dark-indicator-active-bg: #{$dark-theme-color};
+
+$dark-input-disabled: rgba($dark-text-color, 0.6);
 
 html[data-bs-theme="dark"] {
   --text-color: #{$dark-text-color};
@@ -97,4 +107,18 @@ html[data-bs-theme="dark"] {
   --calendar-day-number-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   --calendar-plate-hover-bg: rgba(59, 147, 63, 0.7);
   --calendar-plate-active-bg: rgba(59, 147, 63, 0.7);
+
+  // DATEPICKER
+
+  --datepicker-bg: #{$dark-datepicker-bg};
+
+  // CREATE CONSULTATION
+
+  --btn-next-bg: #{$dark-btn-next-bg};
+  --btn-prev-bg: #{$dark-btn-prev-bg};
+
+  --indicator-bg: #{$dark-indicator-bg};
+  --indicator-active-bg: #{$dark-indicator-active-bg};
+
+  --input-disabled: #{$dark-input-disabled};
 }

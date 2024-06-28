@@ -7,6 +7,12 @@ module.exports = function (grunt) {
     grunt.config.init({
         pkg: grunt.file.readJSON('package.json'),
 
+        ts: {
+            default: {
+                tsconfig: './tsconfig.json'
+            }
+        },
+
         /*
         *
         *   DEFAULT OPTIONS
@@ -37,7 +43,7 @@ module.exports = function (grunt) {
                     port: 8000,
                     base: 'dist',
                     protocol: 'http',
-                    hostname: '192.168.5.109',
+                    hostname: 'localhost',
                     livereload: 35729,
 
                     open: {
@@ -195,6 +201,20 @@ module.exports = function (grunt) {
         * 
         */
 
+        typescript: {
+            base: {
+                src: ['src/tsc/**/*.ts'],
+                dest: 'tmp/tsc',
+                options: {
+                    module: 'amd', //or commonjs
+                    target: 'es5', //or es3
+                    rootDir: 'src/tsc',
+                    sourceMap: false,
+                    declaration: true
+                }
+            }
+        },
+
 
         /*
         *
@@ -235,7 +255,7 @@ module.exports = function (grunt) {
                     dest: 'dist/js/',
                     ext: '.min.js',
                 }]
-            }
+            },
         },
     });
 
@@ -258,6 +278,8 @@ module.exports = function (grunt) {
             },
         },
     });
+
+    // TYPESCRIPT
 
     // JAVASCRIPT
 
@@ -342,6 +364,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-reload');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-ts');
 
     // grunt.loadNpmTasks('grunt-webpack');
 
@@ -360,5 +383,5 @@ module.exports = function (grunt) {
 
     // BUILD FILES to DIST
 
-    grunt.registerTask('build', ['uglify', 'sass', 'postcss', 'cssmin', 'copy', 'includereplace', 'htmlmin:build', 'clean']);
+    grunt.registerTask('build', ['uglify', 'sass', 'postcss', 'cssmin', 'copy', 'includereplace', 'htmlmin:build', 'clean:build']);
 };
