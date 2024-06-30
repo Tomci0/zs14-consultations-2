@@ -74,7 +74,7 @@ body {
     position: relative;    
 
     display: flex;
-    color: var(--text-secondary);
+    color: var(--text-color);
     transition: 0.2s;
     font-style: normal;
 
@@ -102,10 +102,15 @@ body {
     height: 100vh;
     max-height: 100vh;
     overflow: auto;
+    transition: 0.5s;
 }
 
 #page-content {
     padding: 0.75rem;
+    height: calc(100% - 4.7rem);
+
+    max-height: calc(100% - 4.7rem);
+    overflow: auto;
 }
 
 .link {

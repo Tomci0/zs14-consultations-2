@@ -1,4 +1,9 @@
 #sidebar {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
     height: 100vh;
     width: 17rem;
     color: var(--text-color);
@@ -23,7 +28,7 @@
         }
     }
 
-    #nav-title {
+    .nav-title {
         display: flex;
         justify-content: center;
 
@@ -47,7 +52,7 @@
         }
     }
 
-    #navigation {
+    .navigation {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -97,6 +102,29 @@
         hr {
             height: 1px;
             background-color: var(--divdiver-color);
+        }
+    }
+
+    #hide-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: 2rem;
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: var(--navigation-item-bg);
+            box-shadow: -1px 1px 2px #00000038;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+
+            &:hover {
+                background-color: var(--theme-color);
+            }
         }
     }
 }

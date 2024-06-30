@@ -40,10 +40,14 @@
 
             &.active::before {
                 content: "";
-                position: absolute;
+
                 display: flex;
-                top: 1.5rem;
-                right: 12.0rem;
+
+                position: relative;
+
+                top: 0.1rem;
+                right: -0.5rem;
+
                 height: 7.5px;
                 width: 7.5px;
                 background-color: var(--notify-dot);
